@@ -8,6 +8,7 @@ function Navbar() {
   const idPokemon = (e) => {
     setInputValue(e.target.value);
   };
+
   return (
     <Flex
       bg={"#313131"}
@@ -26,7 +27,13 @@ function Navbar() {
         />
       </Link>
       <Flex>
-        <Input onChange={idPokemon} w={40} bg="#fff" focusBorderColor="none" />
+        <Input
+          onChange={idPokemon}
+          w={40}
+          bg="#fff"
+          focusBorderColor="none"
+          data-testid="input-navbar"
+        />
         <Link to={`${inputValue}`} as={ReachLink} color={"#fff"}>
           Buscar Pokemon
         </Link>

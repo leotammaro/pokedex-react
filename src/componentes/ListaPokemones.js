@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Stack } from "@chakra-ui/react";
+import { Button, Grid, Stack } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { obtenerPagina } from "../servicios/obtenerListadoPokemones";
 import Pokemon from "./Pokemon";

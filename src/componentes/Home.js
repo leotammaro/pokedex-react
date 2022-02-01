@@ -1,10 +1,10 @@
-import { Box, Button } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import React from "react";
 import ListaPokemones from "./ListaPokemones";
 
 function Home() {
   return (
-    <Box>
+    <Box data-testid="home">
       <ListaPokemones />
     </Box>
   );
